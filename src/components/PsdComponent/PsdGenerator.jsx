@@ -46,8 +46,8 @@ function PsdGenerator() {
 
   return (
     <div className="psd-generator">
-      <h1 classname="titles">Gerador de senhas</h1>
-      <h2 classname="titles">Escolha os tipos de caracteres</h2>
+      <p className="title">Gerador de senhas</p>
+      <p className="sub-title">Escolha os tipos de caracteres</p>
       <div className="options">
         <label>Maiúsculas {"(A-Z)"}</label>
         <input
@@ -88,7 +88,7 @@ function PsdGenerator() {
           Gerar senha aleatória
         </button>
       </p>
-      <h2 classname="titles">{currentPsd}</h2>
+      <p className="password-field">{currentPsd}</p>
     </div>
   );
 }
