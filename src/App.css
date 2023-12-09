@@ -3,5 +3,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #343434;
+  background: rgb(40, 40, 43);
+  background: -moz-linear-gradient(
+    360deg,
+    rgba(40, 40, 43, 1) 30%,
+    rgba(52, 52, 52, 1) 90%
+  );
+  background: -webkit-linear-gradient(
+    360deg,
+    rgba(40, 40, 43, 1) 30%,
+    rgba(52, 52, 52, 1) 90%
+  );
+  background: linear-gradient(
+    360deg,
+    rgba(40, 40, 43, 1) 30%,
+    rgba(52, 52, 52, 1) 90%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#28282b",endColorstr="#343434",GradientType=1);
 }

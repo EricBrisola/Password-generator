@@ -46,38 +46,52 @@ function PsdGenerator() {
 
   return (
     <div className="psd-generator">
-      <p className="title">Gerador de senhas</p>
-      <p className="sub-title">Escolha os tipos de caracteres</p>
-      <div className="options">
-        <label>Maiúsculas {"(A-Z)"}</label>
-        <input
-          type="checkbox"
-          checked={upperCaseCb}
-          onChange={changeCbValueUpper}
-          className="checkbox-inputs"
-        />
-        <label>Minúsculas {"(a-z)"}</label>
-        <input
-          type="checkbox"
-          checked={lowerCaseCb}
-          onChange={changeCbValueLower}
-          className="checkbox-inputs"
-        />
-        <label>Números {"(0-9)"}</label>
-        <input
-          type="checkbox"
-          checked={numbersCb}
-          onChange={changeCbValueNums}
-          className="checkbox-inputs"
-        />
-        <label>Especiais {"(!-*)"}</label>
-        <input
-          type="checkbox"
-          checked={specialsCb}
-          onChange={changeCbValueSpec}
-          className="checkbox-inputs"
-        />
-      </div>
+      <section className="header">
+        <p className="title">Gerador de senhas</p>
+        <p className="sub-title">Escolha os tipos de caracteres</p>
+      </section>
+      <main className="options">
+        <section className="options-section">
+          <label htmlFor="upper-checkbox">Maiúsculas {"(A-Z)"}</label>
+          <input
+            type="checkbox"
+            checked={upperCaseCb}
+            onChange={changeCbValueUpper}
+            className="checkbox-inputs"
+            id="upper-checkbox"
+          />
+        </section>
+        <section className="options-section">
+          <label htmlFor="lower-checkbox">Minúsculas {"(a-z)"}</label>
+          <input
+            type="checkbox"
+            checked={lowerCaseCb}
+            onChange={changeCbValueLower}
+            className="checkbox-inputs"
+            id="lower-checkbox"
+          />
+        </section>
+        <section className="options-section">
+          <label htmlFor="numbers-checkbox">Números {"(0-9)"}</label>
+          <input
+            type="checkbox"
+            checked={numbersCb}
+            onChange={changeCbValueNums}
+            className="checkbox-inputs"
+            id="numbers-checkbox"
+          />
+        </section>
+        <section className="options-section">
+          <label htmlFor="specials-checkbox">Especiais {"(!-*)"}</label>
+          <input
+            type="checkbox"
+            checked={specialsCb}
+            onChange={changeCbValueSpec}
+            className="checkbox-inputs"
+            id="specials-checkbox"
+          />
+        </section>
+      </main>
       <p>
         <button
           onClick={() =>
@@ -85,7 +99,7 @@ function PsdGenerator() {
           }
           className="generate-psd-btn"
         >
-          Gerar senha aleatória
+          Gerar
         </button>
       </p>
       <p className="password-field">{currentPsd}</p>
