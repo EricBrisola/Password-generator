@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./psdGenerator.css";
+import CopyPsd from "../CopyPsdComponent/CopyPsd";
 
 function PsdGenerator() {
   const [currentPsd, setCurrentPsd] = useState("");
@@ -35,7 +36,7 @@ function PsdGenerator() {
     // console.log(generatedPsd.join(""));
     const test = generatedPsd.join("");
     test === ""
-      ? alert("Escolha ao menos um ddos grupos de caracteres")
+      ? alert("Escolha ao menos um dos grupos de caracteres")
       : setCurrentPsd(test);
 
     setUpperCaseCb(false);
@@ -92,7 +93,7 @@ function PsdGenerator() {
           />
         </section>
       </main>
-      <p>
+      <section className="buttons">
         <button
           onClick={() =>
             generatePsd(upperCaseCb, lowerCaseCb, numbersCb, specialsCb)
@@ -101,7 +102,8 @@ function PsdGenerator() {
         >
           Gerar
         </button>
-      </p>
+        <CopyPsd psdValue={currentPsd} />
+      </section>
       <p className="password-field">{currentPsd}</p>
     </div>
   );
