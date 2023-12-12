@@ -1,0 +1,23 @@
+.options-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+}
+  
+.checkbox-inputs {
+    height: 1.2rem;
+    width: 1.2rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid #e6e6e6;
+    border-radius: 0.25rem;
+    outline: none;
+    cursor: pointer;
+}
+  
+.checkbox-inputs:checked {
+    background-color: #7fffb3;
+}

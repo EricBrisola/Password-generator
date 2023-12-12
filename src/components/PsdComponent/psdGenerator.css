@@ -37,34 +37,10 @@
   font-size: 1.2rem;
 }
 
-.options-section {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: left;
-  gap: 1rem;
-}
-
-.checkbox-inputs {
-  height: 1.2rem;
-  width: 1.2rem;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: 2px solid #e6e6e6;
-  border-radius: 0.25rem;
-  outline: none;
-  cursor: pointer;
-}
-
-.checkbox-inputs:checked {
-  background-color: #7fffb3;
-}
-
 .buttons {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .generate-psd-btn {
@@ -88,13 +64,6 @@
   -moz-box-shadow: 0px 0px 29px 0px rgba(127, 255, 178, 0.57);
   box-shadow: 0px 0px 29px 0px rgba(127, 255, 178, 0.57);
 }
-
-/* #copy-icon {
-  height: 2rem;
-  width: 2rem;
-  cursor: pointer;
-  border-radius: 0.5rem;
-} */
 
 .password-field {
   height: 2rem;

@@ -1,15 +1,16 @@
 import React from "react";
+import "./Option.css";
 
-function Option() {
+function Option(props) {
   return (
     <section className="options-section">
-      <label htmlFor="upper-checkbox">Maiúsculas {"(A-Z)"}</label>
+      <label htmlFor={props.htmlFor}>{props.text}</label>
       <input
         type="checkbox"
-        checked={upperCaseCb}
-        onChange={changeCbValueUpper}
+        checked={props.checked}
+        onChange={props.onChange}
         className="checkbox-inputs"
-        id="upper-checkbox"
+        id={props.id}
       />
     </section>
   );

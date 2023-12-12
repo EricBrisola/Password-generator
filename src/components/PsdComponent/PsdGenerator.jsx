@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./psdGenerator.css";
 import CopyPsd from "../CopyPsdComponent/CopyPsd";
+import Option from "../OptionComponent/Option";
 
 function PsdGenerator() {
   const [currentPsd, setCurrentPsd] = useState("");
@@ -52,46 +53,34 @@ function PsdGenerator() {
         <p className="sub-title">Escolha os tipos de caracteres</p>
       </section>
       <main className="options">
-        <section className="options-section">
-          <label htmlFor="upper-checkbox">Maiúsculas {"(A-Z)"}</label>
-          <input
-            type="checkbox"
-            checked={upperCaseCb}
-            onChange={changeCbValueUpper}
-            className="checkbox-inputs"
-            id="upper-checkbox"
-          />
-        </section>
-        <section className="options-section">
-          <label htmlFor="lower-checkbox">Minúsculas {"(a-z)"}</label>
-          <input
-            type="checkbox"
-            checked={lowerCaseCb}
-            onChange={changeCbValueLower}
-            className="checkbox-inputs"
-            id="lower-checkbox"
-          />
-        </section>
-        <section className="options-section">
-          <label htmlFor="numbers-checkbox">Números {"(0-9)"}</label>
-          <input
-            type="checkbox"
-            checked={numbersCb}
-            onChange={changeCbValueNums}
-            className="checkbox-inputs"
-            id="numbers-checkbox"
-          />
-        </section>
-        <section className="options-section">
-          <label htmlFor="specials-checkbox">Especiais {"(!-*)"}</label>
-          <input
-            type="checkbox"
-            checked={specialsCb}
-            onChange={changeCbValueSpec}
-            className="checkbox-inputs"
-            id="specials-checkbox"
-          />
-        </section>
+        <Option
+          htmlFor={"upper-checkbox"}
+          text={"Maiúsculas (A-Z)"}
+          checked={upperCaseCb}
+          onChange={changeCbValueUpper}
+          id={"upper-checkbox"}
+        />
+        <Option
+          htmlFor={"lower-checkbox"}
+          text={"Minúsculas (a-z)"}
+          checked={lowerCaseCb}
+          onChange={changeCbValueLower}
+          id={"lower-checkbox"}
+        />
+        <Option
+          htmlFor={"numbers-checkbox"}
+          text={"Números (0-9)"}
+          checked={numbersCb}
+          onChange={changeCbValueNums}
+          id={"numbers-checkbox"}
+        />
+        <Option
+          htmlFor={"specials-checkbox"}
+          text={"Especiais (!-*)"}
+          checked={specialsCb}
+          onChange={changeCbValueSpec}
+          id={"specials-checkbox"}
+        />
       </main>
       <section className="buttons">
         <button
