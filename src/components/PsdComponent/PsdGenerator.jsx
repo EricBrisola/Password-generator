@@ -11,10 +11,12 @@ function PsdGenerator() {
   const [numbersCb, setNumbersCb] = useState(false);
   const [specialsCb, setSpecialsCb] = useState(false);
 
-  const changeCbValueUpper = () => setUpperCaseCb(!upperCaseCb);
-  const changeCbValueLower = () => setLowerCasecb(!lowerCaseCb);
-  const changeCbValueNums = () => setNumbersCb(!numbersCb);
-  const changeCbValueSpec = () => setSpecialsCb(!specialsCb);
+  const changeCbValueUpper = () =>
+    setUpperCaseCb((upperCaseCb) => !upperCaseCb);
+  const changeCbValueLower = () =>
+    setLowerCasecb((lowerCaseCb) => !lowerCaseCb);
+  const changeCbValueNums = () => setNumbersCb((numbersCb) => !numbersCb);
+  const changeCbValueSpec = () => setSpecialsCb((specialsCb) => !specialsCb);
 
   const generatePsd = (upperCaseCb, lowerCaseCb, numbersCb, specialsCb) => {
     const allOptions = [
