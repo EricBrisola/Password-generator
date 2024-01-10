@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Password-generator/static/css/main.b258ac86.css",
+    "main.js": "/Password-generator/static/js/main.30b78c56.js",
+    "static/js/787.8c17c78b.chunk.js": "/Password-generator/static/js/787.8c17c78b.chunk.js",
+    "static/media/copy-icon.png": "/Password-generator/static/media/copy-icon.62dc1f2dfd8ddc7ebfdd.png",
+    "index.html": "/Password-generator/index.html",
+    "main.b258ac86.css.map": "/Password-generator/static/css/main.b258ac86.css.map",
+    "main.30b78c56.js.map": "/Password-generator/static/js/main.30b78c56.js.map",
+    "787.8c17c78b.chunk.js.map": "/Password-generator/static/js/787.8c17c78b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b258ac86.css",
+    "static/js/main.30b78c56.js"
+  ]
+}
